@@ -25,3 +25,5 @@ note: json: It means this server will receive data in json format.
       static: It means give some data to the all user in public.
 
 9. Use the cookie-parser also.
+
+10. Handle async and try catch in utils file.
