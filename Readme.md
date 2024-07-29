@@ -28,4 +28,4 @@ note: json: It means this server will receive data in json format.
 
 10. Handle async and try catch in utils file.
 
-11.Also write api error on utils file
+11.Also write api error and api response in utils folder
