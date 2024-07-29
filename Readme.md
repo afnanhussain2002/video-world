@@ -22,4 +22,6 @@ note: When i call a function which is came with async, I have to write then and 
 
 note: json: It means this server will receive data in json format.
       urlencoded: It means read the url special character like %,+ etc.
-      static: It means give some data to the all user in public
+      static: It means give some data to the all user in public.
+
+9. Use the cookie-parser also.
