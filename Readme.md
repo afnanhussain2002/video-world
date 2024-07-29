@@ -14,4 +14,6 @@ note: When i call a function which is came with async, I have to write then and 
 
 5. Add the express on a variable on app.js file and export it. Then use it on main index.js file.
 
-6. Install cors and cookie parser and use them on app.js file
+6. Install cors and cookie parser and use them on app.js file.
+
+7. app.use(cors()) and set the origin and credentials:true
