@@ -11,7 +11,9 @@ connectDB()
     app.on('error',(error) =>{
         console.log('Error from express', error);
     })
-    
+    app.listen(port, () =>{
+        console.log(`Server is running on port: ${port}`);
+    })
 })
 .catch((err) =>{
     console.log('Error from mongoDB connection!!', err);
