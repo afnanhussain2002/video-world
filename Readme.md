@@ -31,3 +31,8 @@ note: json: It means this server will receive data in json format.
 11. Also write api error and api response in utils folder
 
 12. Write user model and video model
+
+13. Install npm i mongoose-aggregate-paginate-v2 and use this on video.model.js
+
+14. Install npm i bcrypt and jsonwebtoken
+
