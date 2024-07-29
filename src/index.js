@@ -1,7 +1,9 @@
 import connectDB from "./db/index.js";
 
 connectDB()
-.then()
+.then(() =>{
+    
+})
 .catch((err) =>{
     console.log('Error from mongoDB connection!!', err);
 })
