@@ -27,3 +27,5 @@ note: json: It means this server will receive data in json format.
 9. Use the cookie-parser also.
 
 10. Handle async and try catch in utils file.
+
+11.Also write api error on utils file
