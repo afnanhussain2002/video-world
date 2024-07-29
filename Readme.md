@@ -17,3 +17,9 @@ note: When i call a function which is came with async, I have to write then and 
 6. Install cors and cookie parser and use them on app.js file.
 
 7. app.use(cors()) and set the origin and credentials:true
+
+8. use express.json, urlencoded, static.
+
+note: json: It means this server will receive data in json format.
+      urlencoded: It means read the url special character like %,+ etc.
+      static: It means give some data to the all user in public
