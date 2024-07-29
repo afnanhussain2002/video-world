@@ -6,7 +6,7 @@
 
 3. Install mongoose, express and dotenv npm packages. 
 
-note: when i need to talk with database, Its mandatory use "try catch" block for error handling
+note: when i need to talk with database, Its mandatory use "try catch" block for error handling use use "async await" on that function 
 
 4. import mongoose, dotenv and connect database into a variable. Do not forget config dotenv
 
