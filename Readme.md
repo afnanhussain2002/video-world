@@ -50,5 +50,9 @@ note: json: It means this server will receive data in json format.
 
 21. Set cloudinary important info on .env file
 
+22. write a mathod for upload system on cloudinary
 
+23. Make a file on middleware for use the multer.
+
+24. 
 
