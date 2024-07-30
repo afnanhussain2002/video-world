@@ -48,3 +48,7 @@ note: json: It means this server will receive data in json format.
 
 20. Configure the coludinary on cloudinary file. Everything written on cloudinary documentation
 
+21. Set cloudinary important info on .env file
+
+
+
