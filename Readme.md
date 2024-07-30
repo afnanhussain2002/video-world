@@ -42,3 +42,7 @@ note: json: It means this server will receive data in json format.
 
 17. Install multer for upload file process on cloudinary.
 
+18. Make a file name as cloudinary on utils folder
+
+
+
