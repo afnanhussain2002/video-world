@@ -44,5 +44,7 @@ note: json: It means this server will receive data in json format.
 
 18. Make a file name as cloudinary on utils folder
 
+19. Import v2 from cloudinary I can name change the name of cloudinary of that v2. Also import fs from fs.
 
+20. Configure the coludinary on cloudinary file. Everything written on cloudinary documentation
 
