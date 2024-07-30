@@ -36,5 +36,9 @@ note: json: It means this server will receive data in json format.
 
 14. Install npm i bcrypt and jsonwebtoken
 
-15 Use bcrypt for password encrypt and use jwt for secure the website
+15. Use bcrypt for password encrypt and use jwt for secure the website
+
+16. Install cloudinary for put the file, video.
+
+17. Install multer for upload file process on cloudinary.
 
