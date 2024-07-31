@@ -54,5 +54,7 @@ note: json: It means this server will receive data in json format.
 
 23. Make a file on middleware for use the multer.
 
-24. 
+24. Use access and refresh token on user model file.
+
+25. Start writing code for register a user.
 
