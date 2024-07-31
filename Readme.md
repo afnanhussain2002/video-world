@@ -56,5 +56,7 @@ note: json: It means this server will receive data in json format.
 
 24. Use access and refresh token on user model file.
 
-25. Start writing code for register a user.
+25. Start writing code for register a user and work it on controllers folder.
+
+26. Writing routes for user on routes folder.
 
