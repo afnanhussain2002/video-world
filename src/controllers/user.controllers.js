@@ -26,7 +26,8 @@ const registerUser = asyncHandler(async(req,res)=>{
         throw ApiError(409, "email or username already exists")
        }
        // check for images, check for avatar
-       
+       const avatarLocalPath = req.files?.avatar[0]?.path;
+       const coverImageLocalPath = req.files?.coverImage[0]?.path;
        // upload them to cloudinary, avatar
        // create user object - create entry in db
        // remove password and refresh token field form response
