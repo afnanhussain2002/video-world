@@ -60,3 +60,7 @@ note: json: It means this server will receive data in json format.
 
 26. Writing routes for user on routes folder.
 
+27. Write the user api on app file
+
+
+
