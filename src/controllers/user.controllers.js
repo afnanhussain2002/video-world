@@ -15,18 +15,21 @@ const registerUser = asyncHandler(async (req, res) => {
   // get user form frontend i mean postman
 
   const { fullName, username, email, password } = req.body;
-  console.log("email", email);
+  
   // validation - check empty
+  
   if (
     [fullName, username, email, password].some((field) => field.trim() === "")
   ) {
     throw new ApiError(400, "All fields are required");
   }
   // check if the user already exists: Using username, email
+  console.log("body se aya", req.body);
   const existUser = await User.findOne({
     $or: [{ username }, { email }],
   });
   if (existUser) {
+    console.log('Exists user', existUser);
     throw new ApiError(409, "email or username already exists");
   }
   // check for images, check for avatar
