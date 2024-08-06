@@ -4,6 +4,20 @@ import { ApiResponse } from "../utils/ApiResponse.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import { uploadOnCloudinary } from "../utils/cloudinary.js";
 
+const generateAccessAndRefreshToken = async(userId) =>{
+  try {
+    const user = await User.findById(userId);
+    const accessToken = user.generateAccessToken()
+    const refreshToken = user.generateRefreshToken()
+    
+  } catch (error) {
+    throw new ApiError(
+      500,
+      "Something Went wrong while generating access and refresh token"
+    )
+  }
+}
+
 const registerUser = asyncHandler(async (req, res) => {
   // It was just for test everything working or not
   /* res.status(200).json({
@@ -76,5 +90,30 @@ const registerUser = asyncHandler(async (req, res) => {
     .status(201)
     .json(new ApiResponse(200, createdUser, "User Registered Successfully"));
 });
+
+// login the user
+
+const loginUser = asyncHandler(async(req,res) =>{
+  const {email, username, password} = req.body;
+
+  if (!username || !email) {
+    throw new ApiError(400, "username or email is required")
+
+  }
+
+  const user = await User.findOne({
+    $or:[{username}, {email}]
+  })
+  if (!user) {
+    throw new ApiError(400, "User dose not exist")
+  }
+  const isPasswordValid = await user.isPasswordCorrect(password);
+
+  if (!isPasswordValid) {
+    throw new ApiError(401, "Invalid user credentials")
+  }
+
+
+})
 
 export { registerUser };
